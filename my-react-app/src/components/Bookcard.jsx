@@ -12,13 +12,18 @@ export default function BookCard({ book }) {
       <div>
         <h3>{book.title}</h3>
         <span>{book.first_publish_year}</span>
-        <h3>{book.author_name}</h3>
-        <h3>Average rating: {book.ratings_average}</h3>
+        <p>{book.author_name}</p>
+        <p>Average rating: {book.ratings_average}</p>
         <a href={`https://www.amazon.com/s?k=${book.id_amazon}`}>Buy on Amazon</a>
       </div>
     </div>
     
   )
 }
+//Kilder:
+//https://www.youtube.com/watch?v=7xL9c39DhjI&ab_channel=GeekProbin
+//https://www.youtube.com/watch?v=b9eMGE7QtTk&list=WL&index=2&ab_channel=JavaScriptMastery
+//https://github.com/toremake/UIN2024_coursebase
+//Webtricks LMS
 
 

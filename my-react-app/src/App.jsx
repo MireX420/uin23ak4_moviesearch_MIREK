@@ -10,13 +10,12 @@ function App() {
 
   const searchBooks = async (title) => {
     if (title.length < 3) {
-      // Do not perform search if the query is less than 3 characters
       return
     }
     try {
       const response = await fetch(`${API_URL}?title=${title}`)
       const data = await response.json()
-      setBooks(data.docs) // Assuming the response data structure, adjust as necessary
+      setBooks(data.docs)
     } catch (error) {
       console.error('Error searching books:', error)
     }
@@ -31,7 +30,7 @@ function App() {
   
 }
 
-export default App;
+export default App
 
 //Kilder:
 //https://www.youtube.com/watch?v=7xL9c39DhjI&ab_channel=GeekProbin

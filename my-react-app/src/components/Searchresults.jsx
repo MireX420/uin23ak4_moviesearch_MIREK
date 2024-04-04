@@ -1,16 +1,7 @@
 import SearchIcon from '../assets/search.svg';
 import Bookcard from './Bookcard';
-import { useEffect } from 'react';
 
 export default function Searchresults({ books, searchTerm, setSearchTerm, searchBooks }){
-    
-    useEffect(() => {
-        const handleKeyDown = (e) => {
-          if (e.key === 'Enter') {
-            searchBooks(searchTerm);
-          }
-        }})
-
     return(
         <div className="app">
       <h1>BookLand</h1>
@@ -44,3 +35,8 @@ export default function Searchresults({ books, searchTerm, setSearchTerm, search
     </div>
     )
 }
+//Kilder:
+//https://www.youtube.com/watch?v=7xL9c39DhjI&ab_channel=GeekProbin
+//https://www.youtube.com/watch?v=b9eMGE7QtTk&list=WL&index=2&ab_channel=JavaScriptMastery
+//https://github.com/toremake/UIN2024_coursebase
+//Webtricks LMS
